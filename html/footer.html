@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .footer {
+            background-color: #d13434;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+            padding-right: 30px;
+        }
+
+        .footer-section:first-child {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .footer-content {
+                padding: 0 30px;
+            }
+            
+            .footer-section {
+                flex: 0 0 calc(50% - 30px);  /* Two columns on tablets */
+                min-width: initial;
+            }
+
+            .footer-section:first-child {
+                flex: 0 0 100%;  /* Full width for company info */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 40px 0 20px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .footer-section {
+                flex: 0 0 100%;
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .footer-section:last-child {
+                margin-bottom: 0;
+            }
+
+            .footer-section h3 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            .social-links {
+                justify-content: flex-start;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                margin-top: 20px;
+                padding: 20px;
+            }
+
+            .footer-bottom-links {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .footer-bottom p {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                padding: 0 15px;
+            }
+
+            .footer-section {
+                margin-bottom: 30px;
+            }
+
+            .social-links {
+                gap: 10px;
+            }
+
+            .social-link {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info Section -->
+            <div class="footer-section">
+                <h3>Twain Harte Homes And Land</h3>
+                <p>We're here to offer expert real estate services with a warm, personal touch. Our team is passionate about helping you find your dream home, whether it's a cozy cabin, a charming vacation getaway, or a beautiful piece of land nestled in the Sierra Nevada region.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Terms Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> 22996 Joaquin Gully Rd, Twain Harte, CA 95383, United States
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> (209) 352-2189
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> 2donharms@gmail.com
+                </p>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="footer-section">
+                <h3>SOCIAL LINKS:</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>Copyright. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Term Of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
